@@ -2,37 +2,71 @@
 layout: splash
 permalink: /
 hidden: true
-header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
-  actions:
-    - label: "<i class='fas fa-download'></i> Install now"
-      url: "/docs/quick-start-guide/"
-excerpt: >
-  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
-  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.3">Latest release v4.27.3</a></small>
-feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
-    alt: "customizable"
-    title: "Super customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
-    url: "/docs/configuration/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/mm-responsive-feature.png
-    alt: "fully responsive"
-    title: "Responsive layouts"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
-    url: "/docs/layouts/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/mm-free-feature.png
-    alt: "100% free"
-    title: "100% free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
-    url: "/docs/license/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"      
----
 
+header:
+  overlay_color: "#0b1c2d"
+  overlay_image: /assets/images/hero-mechanics.jpg
+  actions:
+    - label: "<i class='fas fa-search'></i> Browse Knowledge Base"
+      url: "/design/"
+    - label: "<i class='fas fa-book'></i> Volumes"
+      url: "/volumes/"
+
+excerpt: >
+  <strong>Mechanics Knowledge Platform</strong><br>
+  An academically structured engineering knowledge base covering
+  <em>Mechanical Design, CAD Systems, Manufacturing, and Applied Mechanics</em>.<br>
+  <small>Curated by Berkay Aktaş</small>
+
+feature_row:
+  - image_path: /assets/images/feature-design.png
+    alt: "mechanical design"
+    title: "Design & CAD"
+    excerpt: "AutoCAD, FreeCAD, Solid modeling, parametric workflows, and industrial drawing standards."
+    url: "/design/"
+    btn_class: "btn--primary"
+    btn_label: "Enter Design Library"
+
+  - image_path: /assets/images/feature-volumes.png
+    alt: "engineering volumes"
+    title: "Engineering Volumes"
+    excerpt: "Structured academic volumes covering statics, dynamics, strength of materials, kinematics, and mechanisms."
+    url: "/volumes/"
+    btn_class: "btn--primary"
+    btn_label: "Browse Volumes"
+
+  - image_path: /assets/images/feature-research.png
+    alt: "technical research"
+    title: "Technical Articles"
+    excerpt: "Peer-style technical explanations, worked examples, command references, and applied problem solving."
+    url: "/posts/"
+    btn_class: "btn--primary"
+    btn_label: "Read Articles"
+
+feature_row2:
+  - image_path: /assets/images/feature-autocad.png
+    alt: "autocad"
+    title: "AutoCAD"
+    excerpt: "Line, polyline, constraints, layers, blocks, dimensioning, plotting, and professional drafting workflows."
+    url: "/design/autocad/"
+    btn_class: "btn--info"
+    btn_label: "Open AutoCAD"
+
+  - image_path: /assets/images/feature-freecad.png
+    alt: "freecad"
+    title: "FreeCAD"
+    excerpt: "Parametric solids, assemblies, FEM, CAM, and technical drawing environments."
+    url: "/design/freecad/"
+    btn_class: "btn--info"
+    btn_label: "Open FreeCAD"
+
+  - image_path: /assets/images/feature-manufacturing.png
+    alt: "manufacturing"
+    title: "Manufacturing"
+    excerpt: "Machining, tolerancing, surface quality, metrology, and production engineering principles."
+    url: "/manufacturing/"
+    btn_class: "btn--info"
+    btn_label: "Explore Manufacturing"
+---
 {% include feature_row %}
+{% include feature_row2 %}
