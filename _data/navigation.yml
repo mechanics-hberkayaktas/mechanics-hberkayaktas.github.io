@@ -1,7 +1,35 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Tasarım"
+    url: /design/
+    children:
+      - title: "AutoCAD"
+        url: /design/autocad/
+      - title: "Teknik Resim"
+        url: /design/technical-drawing/
+      - title: "SolidWorks"
+        url: /design/solidworks/
+      - title: "FreeCAD"
+        url: /design/freecad/
+      - title: "GD&T"
+        url: /design/gdt/
+
+  - title: "Analiz"
+    url: /analysis/
+
+  - title: "Üretim"
+    url: /manufacturing/
+
+  - title: "Bakım"
+    url: /maintenance/
+
+  - title: "Standartlar & Tablolar"
+    url: /standards/
+
+  - title: "Referanslar"
+    url: /reference/
+
+
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
@@ -10,3 +38,19 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+feature_row:
+    intro:
+      - title: "Makine Tasarımı"
+        excerpt: "Şaftlar, dişliler, rulmanlar, kaplinler ve güç iletim sistemleri için mühendislik tabanlı analizler."
+        image_path: /assets/images/design.png
+        url: /design/
+
+      - title: "Analiz ve Hesaplama"
+        excerpt: "Mukavemet, yorulma, titreşim, termal ve akışkanlar mekaniği hesaplamaları."
+        image_path: /assets/images/analysis.png
+        url: /analysis/
+
+      - title: "Saha ve Bakım"
+        excerpt: "Konveyörler, presler, hidrolik sistemler ve endüstriyel arıza analizi."
+        image_path: /assets/images/maintenance.png
+        url: /maintenance/

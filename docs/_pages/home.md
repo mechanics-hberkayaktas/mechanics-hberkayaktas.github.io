@@ -15,3 +15,4 @@ header:
 
 Bu platform; **makine tasarımı, mukavemet, termodinamik, akışkanlar mekaniği, üretim teknolojileri, bakım mühendisliği ve ISO/ASME/DIN standartları** alanlarında yapılandırılmış bir referans kütüphanesidir.
 {: .lead }
+{% include feature_row id="intro" type="center" %}
