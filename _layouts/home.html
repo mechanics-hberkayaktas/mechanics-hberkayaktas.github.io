@@ -10,9 +10,10 @@ layout: default
     <p>{{ site.description }}</p>
 
     {% if site.search %}
-      <div class="home-search">
-        {% include search/lunr.html %}
-      </div>
+    <div class="home-search">
+      {% include search/search_form.html %}
+      {% include search/lunr-search-scripts.html %}
+    </div>
     {% endif %}
   </section>
 
@@ -38,9 +39,9 @@ layout: default
 
         {% assign popular = site.posts | sort: "views" | reverse %}
         {% for post in popular limit:5 %}
-          <article class="home-post">
-            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-          </article>
+        <article class="home-post">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        </article>
         {% endfor %}
       </section>
     </main>
