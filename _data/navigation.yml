@@ -1,7 +1,7 @@
 main:
   - title: "Ana Sayfa"
     url: /
-  - title: "Tasarım"
+  - title: "Tasarıms"
     url: /design/
     children:
       - title: "AutoCAD"
