@@ -11,6 +11,7 @@ url: "https://mechanics-hberkayaktas.github.io"
 baseurl: ""
 repository: "mechanics-hberkayaktas/mechanics-hberkayaktas.github.io"
 
+remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "default"
 
 # ===============================
