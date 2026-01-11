@@ -1,6 +1,6 @@
 ---
 title: "Makine Mühendisliği Ansiklopedisi"
-layout: splash
+layout: single
 classes: wide
 author_profile: false
 header:
