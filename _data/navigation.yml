@@ -1,56 +1,46 @@
-# main links
 main:
-  - title: "Tasarıms"
+  - title: "Ana Sayfa"
+    url: /
+  - title: "Tasarım"
     url: /design/
     children:
       - title: "AutoCAD"
         url: /design/autocad/
-      - title: "Teknik Resim"
-        url: /design/technical-drawing/
       - title: "SolidWorks"
         url: /design/solidworks/
       - title: "FreeCAD"
         url: /design/freecad/
+      - title: "Teknik Resim"
+        url: /design/drawing/
       - title: "GD&T"
         url: /design/gdt/
 
-  - title: "Analiz"
-    url: /analysis/
+  - title: "Cilt I – Temel Mühendislik"
+    url: /volume-1/
+    children:
+      - title: "Matematik & Fizik"
+        url: /volume-1/math/
+      - title: "Yükler & Emniyet"
+        url: /volume-1/loads/
+      - title: "Malzemeler"
+        url: /volume-1/materials/
+      - title: "Civatalar"
+        url: /volume-1/fasteners/
+      - title: "Miller & Kaplinler"
+        url: /volume-1/shafts/
 
-  - title: "Üretim"
-    url: /manufacturing/
-
-  - title: "Bakım"
-    url: /maintenance/
+  - title: "Cilt II – Endüstriyel Sistemler"
+    url: /volume-2/
+    children:
+      - title: "Konveyörler"
+        url: /volume-2/conveyors/
+      - title: "Dişli Sistemleri"
+        url: /volume-2/gears/
+      - title: "Zincir & Kayış"
+        url: /volume-2/transmission/
 
   - title: "Standartlar & Tablolar"
     url: /standards/
 
-  - title: "Referanslar"
+  - title: "Referans"
     url: /reference/
-
-
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
-feature_row:
-    intro:
-      - title: "Makine Tasarımı"
-        excerpt: "Şaftlar, dişliler, rulmanlar, kaplinler ve güç iletim sistemleri için mühendislik tabanlı analizler."
-        image_path: /assets/images/design.png
-        url: /design/
-
-      - title: "Analiz ve Hesaplama"
-        excerpt: "Mukavemet, yorulma, titreşim, termal ve akışkanlar mekaniği hesaplamaları."
-        image_path: /assets/images/analysis.png
-        url: /analysis/
-
-      - title: "Saha ve Bakım"
-        excerpt: "Konveyörler, presler, hidrolik sistemler ve endüstriyel arıza analizi."
-        image_path: /assets/images/maintenance.png
-        url: /maintenance/
