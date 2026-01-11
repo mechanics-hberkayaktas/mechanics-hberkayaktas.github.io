@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "tr-TR"
@@ -113,10 +113,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Hami Berkay Aktaş"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
+  bio              : "Merhaba! Ben Berkay, tasarım odaklı düşünen bir Makine Mühendisiyim.CAD tabanlı tasarım araçlarıyla çalışmayı seviyor, dijital tasarım teknolojilerini yakından takip ediyorum. Amacım, mühendislik bilgisini yaratıcılıkla birleştirip hem işlevsel hem de estetik çözümler üreterek sektörde fark yaratmak."
+  location         : "Türkiye"
   email            :
   links:
     - label: "Email"
