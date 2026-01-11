@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "Tasarım"
+  - title: "Tasarıms"
     url: /design/
     children:
       - title: "AutoCAD"
