@@ -10,7 +10,12 @@ header:
   caption: "Design • Analysis • Field • Maintenance • Standards"
 ---
 
-{% include search_form.html %}
+{% if site.search %}
+  <div class="search-container">
+    {% include_cached search/search_form.html %}
+  </div>
+{% endif %}
+
 
 ---
 
