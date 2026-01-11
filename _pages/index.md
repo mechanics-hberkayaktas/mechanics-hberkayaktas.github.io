@@ -1,48 +1,38 @@
 ---
-title: "Makine Mühendisliği Ansiklopedisi"
-layout: single
-classes: wide
-author_profile: false
+layout: splash
+permalink: /
+hidden: true
 header:
-  overlay_color: "#2c2f36"
-  overlay_image: /assets/images/hero-mechanics.jpg
-  overlay_filter: 0.4
-  caption: "Design • Analysis • Field • Maintenance • Standards"
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/mm-home-page-feature.jpg
+  actions:
+    - label: "<i class='fas fa-download'></i> Install now"
+      url: "/docs/quick-start-guide/"
+excerpt: >
+  A flexible two-column Jekyll theme. Perfect for building personal sites, blogs, and portfolios.<br />
+  <small><a href="https://github.com/mmistakes/minimal-mistakes/releases/tag/4.27.3">Latest release v4.27.3</a></small>
+feature_row:
+  - image_path: /assets/images/mm-customizable-feature.png
+    alt: "customizable"
+    title: "Super customizable"
+    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
+    url: "/docs/configuration/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/mm-responsive-feature.png
+    alt: "fully responsive"
+    title: "Responsive layouts"
+    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
+    url: "/docs/layouts/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/mm-free-feature.png
+    alt: "100% free"
+    title: "100% free"
+    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
+    url: "/docs/license/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"      
 ---
 
-{% if site.search %}
-  <div class="search-container">
-    {% include_cached search/search_form.html %}
-  </div>
-{% endif %}
-
-
----
-
-## Akademik Mühendislik Bilgi Merkezi
-
-Bu platform;  
-makine mühendisliği disiplininde **tasarım, analiz, üretim, saha ve standartlar** alanlarında  
-yapılandırılmış, kaynaklı ve teknik olarak doğrulanmış içerik sunmak üzere tasarlanmıştır.
-
----
-
-## Son Yayınlanan İçerikler
-{% include feature_row id="latest" %}
-
----
-
-## En Çok Okunan Teknik Başlıklar
-{% include feature_row id="popular" %}
-
----
-
-## Konu Haritası
-
-| Alan | İçerik |
-|------|------|
-| **Tasarım** | AutoCAD, SolidWorks, FreeCAD, GD&T |
-| **Analiz** | Gerilme, Burkulma, Yorulma, Titreşim |
-| **Üretim** | Talaşlı imalat, Döküm, Kaynak |
-| **Bakım** | Arıza analizi, rulmanlar, yağlama |
-| **Standartlar** | ISO, DIN, ANSI tabloları |
+{% include feature_row %}
