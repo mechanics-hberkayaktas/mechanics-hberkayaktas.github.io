@@ -1,20 +1,81 @@
 ---
-layout: archive
+layout: default
 ---
 
-{{ content }}
+<div class="home-layout">
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+  <!-- HERO -->
+  <section class="home-hero">
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+    {% if site.search %}
+      <div class="home-search">
+        {% include search/lunr.html %}
+      </div>
+    {% endif %}
+  </section>
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html entries=posts type=entries_layout %}
+  <div class="home-grid">
+
+    <!-- MAIN CONTENT -->
+    <main class="home-main">
+      {{ content }}
+
+      <section class="home-section">
+        <h2>Latest Articles</h2>
+
+        {% for post in site.posts limit:5 %}
+        <article class="home-post">
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt | strip_html | truncate: 140 }}</p>
+        </article>
+        {% endfor %}
+      </section>
+
+      <section class="home-section">
+        <h2>Most Read</h2>
+
+        {% assign popular = site.posts | sort: "views" | reverse %}
+        {% for post in popular limit:5 %}
+          <article class="home-post">
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          </article>
+        {% endfor %}
+      </section>
+    </main>
+
+    <!-- RIGHT SIDEBAR NAVIGATION -->
+    <aside class="home-sidebar">
+
+      <nav class="home-nav">
+
+        <h3>Design</h3>
+        <ul>
+          <li><a href="/design/autocad/">AutoCAD</a></li>
+          <li><a href="/design/freecad/">FreeCAD</a></li>
+          <li><a href="/design/solidworks/">SolidWorks</a></li>
+          <li><a href="/design/technical-drawing/">Technical Drawing</a></li>
+          <li><a href="/design/gdt/">GD&amp;T</a></li>
+        </ul>
+
+        <h3>Cilt 1</h3>
+        <ul>
+          <li><a href="/cilt1/kinematics/">Kinematics</a></li>
+          <li><a href="/cilt1/statics/">Statics</a></li>
+          <li><a href="/cilt1/materials/">Materials</a></li>
+        </ul>
+
+        <h3>Cilt 2</h3>
+        <ul>
+          <li><a href="/cilt2/machine-elements/">Machine Elements</a></li>
+          <li><a href="/cilt2/hydraulics/">Hydraulics</a></li>
+          <li><a href="/cilt2/manufacturing/">Manufacturing</a></li>
+        </ul>
+
+      </nav>
+
+    </aside>
+
+  </div>
 </div>
-
-{% include paginator.html %}
