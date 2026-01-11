@@ -1,28 +1,28 @@
-# /_data/authors.yml
+# Authors
 
-Hami Berkay Aktas:
+berkayaktas:
   name        : "Hami Berkay Aktaş"
-  bio         : "What do you want, jewels? I am a very extravagant man."
-  avatar      : "/assets/images/bio-photo-2.jpg"
+  bio         : "Mechanical Engineer. Research, design engineering, manufacturing systems and industrial standards."
+  avatar      : "/assets/images/berkay.jpg"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:billyrick@rick.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://thewhip.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/extravagantman"
+      url: "https://mechanics-hberkayaktas.github.io"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/hberkayaktas"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/hberkayaktas"
 
-Cornelius Fiddlebone:
-  name        : "Cornelius Fiddlebone"
-  bio         : "I ordered what?"
-  avatar      : "/assets/images/bio-photo.jpg"
+editorial_board:
+  name        : "Mechanical Engineering Editorial Board"
+  bio         : "Editorial and peer-review board responsible for technical accuracy, standard compliance, and academic consistency."
+  avatar      : "/assets/images/editorial-board.png"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:cornelius@thewhip.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/rhymeswithsackit"
+    - label: "Standards"
+      icon: "fas fa-fw fa-book"
+      url: "/standards/"
+    - label: "Reference Library"
+      icon: "fas fa-fw fa-database"
+      url: "/reference/"
