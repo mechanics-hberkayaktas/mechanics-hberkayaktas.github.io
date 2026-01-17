@@ -1,7 +1,7 @@
 main:
   - title: "Ana Sayfa"
     url: /
-  - title: "Tasarıms"
+  - title: "Tasarım"
     url: /design/
     children:
       - title: "AutoCAD"
@@ -14,30 +14,6 @@ main:
         url: /design/drawing/
       - title: "GD&T"
         url: /design/gdt/
-
-  - title: "Cilt I – Temel Mühendislik"
-    url: /volume-1/
-    children:
-      - title: "Matematik & Fizik"
-        url: /volume-1/math/
-      - title: "Yükler & Emniyet"
-        url: /volume-1/loads/
-      - title: "Malzemeler"
-        url: /volume-1/materials/
-      - title: "Civatalar"
-        url: /volume-1/fasteners/
-      - title: "Miller & Kaplinler"
-        url: /volume-1/shafts/
-
-  - title: "Cilt II – Endüstriyel Sistemler"
-    url: /volume-2/
-    children:
-      - title: "Konveyörler"
-        url: /volume-2/conveyors/
-      - title: "Dişli Sistemleri"
-        url: /volume-2/gears/
-      - title: "Zincir & Kayış"
-        url: /volume-2/transmission/
 
   - title: "Standartlar & Tablolar"
     url: /standards/

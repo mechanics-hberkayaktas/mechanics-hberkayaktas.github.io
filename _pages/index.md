@@ -11,8 +11,8 @@ excerpt: >
 feature_row:
   - image_path: /assets/images/en-iyi-cad-programlari.png
     alt: "customizable"
-    title: "Super customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
+    title: "Tasarım"
+    excerpt: "CAD ve teknik çizimler: 2B/3B modelleme, montaj ve detay çizimleri; ölçülendirme, toleranslar ve üretime hazır dokümantasyon sağlayan uygulamalar."
     url: "/docs/configuration/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
