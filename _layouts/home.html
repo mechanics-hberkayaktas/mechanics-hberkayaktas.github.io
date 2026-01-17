@@ -16,7 +16,7 @@ layout: default
 <div id="main" role="main">
 
 
-{% ----- sidebar ------ %}
+{%- comment -%} sidebar {%- endcomment -%}
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
@@ -36,11 +36,13 @@ layout: default
   {% endif %}
   </div>
 {% endif %}
-{% ----- sidebar ------ %}
+{%- comment -%} sidebar end {%- endcomment -%}
 
 
 
-{% ---- search -------- %}
+
+{%- comment -%} search {%- endcomment -%}
+
     <div class="search-content__inner-wrap">
   {%- assign search_provider = site.search_provider | default: "lunr" -%}
   {%- case search_provider -%}
@@ -69,7 +71,8 @@ layout: default
 </div>
 
 
-{% ---- seach end-------- %}
+{%- comment -%} search end {%- endcomment -%}
+
 
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork" {% if page.locale %}
     lang="{{ page.locale }}" {% endif %}>
