@@ -13,23 +13,25 @@ feature_row:
     alt: "customizable"
     title: "Tasarım"
     excerpt: "CAD ve teknik çizimler: 2B/3B modelleme, montaj ve detay çizimleri; ölçülendirme, toleranslar ve üretime hazır dokümantasyon sağlayan uygulamalar."
-    url: "/docs/configuration/"
+    url: "/desing/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/mm-responsive-feature.png
+    btn_label: "Daha Fazla"
+  - image_path: /assets/images/fea-analysis.png
     alt: "fully responsive"
-    title: "Responsive layouts"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
+    title: "Üretim"
+    excerpt: "Üretim süreçleri: talaşlı imalat, kaynak, montaj, kalite kontrol ve atölye uygulamaları; üretim yöntemleri, makine seçimleri ve iyi uygulamalar hakkında rehber için Üretim sayfasına gidin."
     url: "/docs/layouts/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/mm-free-feature.png
+    btn_label: "Daha Fazla"
+
+  - image_path: /assets/images/kanal-frezeleme-islemi-nedir-0aed.jpg
     alt: "100% free"
-    title: "100% free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
+    title: "Analiz"
+    excerpt: "Mekanik analizler: statik, dinamik, modal ve gerilme analizleri; FEA iş akışları, sınır koşulları tanımlama ve sonuç yorumlama rehberi. Detaylar için Analiz sayfasına gidin."
     url: "/docs/license/"
     btn_class: "btn--primary"
-    btn_label: "Learn more"      
+    btn_label: "Daha Fazla"
+      
 ---
 
 
