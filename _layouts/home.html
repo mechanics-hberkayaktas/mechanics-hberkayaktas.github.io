@@ -14,7 +14,33 @@ layout: default
 
 
 <div id="main" role="main">
-  {% include sidebar.html %}
+
+
+{% ----- sidebar ------ %}
+{% if page.author_profile or layout.author_profile or page.sidebar %}
+  <div class="sidebar sticky">
+  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+  {% if page.sidebar %}
+    {% for s in page.sidebar %}
+      {% if s.image %}
+        <img src="{{ s.image | relative_url }}"
+             alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+      {% endif %}
+      {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+      {% if s.text %}{{ s.text | markdownify }}{% endif %}
+      {% if s.nav %}{% include nav_list nav=s.nav %}{% endif %}
+    {% endfor %}
+    {% if page.sidebar.nav %}
+      {% include nav_list nav=page.sidebar.nav %}
+    {% endif %}
+  {% endif %}
+  </div>
+{% endif %}
+{% ----- sidebar ------ %}
+
+
+
+
   <article class="splash" itemscope itemtype="https://schema.org/CreativeWork" {% if page.locale %}
     lang="{{ page.locale }}" {% endif %}>
     {% if page.title %}
@@ -31,6 +57,8 @@ layout: default
     <section class="page__content" itemprop="text">
       {{ content }}
     </section>
+
+{% ---- search -------- %}
     <div class="search-content__inner-wrap">
   {%- assign search_provider = site.search_provider | default: "lunr" -%}
   {%- case search_provider -%}
@@ -57,6 +85,11 @@ layout: default
   <div class="search-hits"></div>
   {%- endcase -%}
 </div>
+
+
+{% ---- seach end-------- %}
+
+
 {% for year in postsByYear %}
   <section id="{{ year.name }}" class="taxonomy__section">
     <h2 class="archive__subtitle">{{ year.name }}</h2>
