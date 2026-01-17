@@ -14,9 +14,25 @@ main:
         url: /design/drawing/
       - title: "GD&T"
         url: /design/gdt/
-
+  - title: "Üretim"
+    url: /manufacturing/
+    children:
+      - title: "CNC"
+        url: /manufacturing/cnc/
+      - title: "3D Baskı"
+        url: /manufacturing/3d-printing/
+      - title: "Kalite Kontrol"
+        url: /manufacturing/quality-control/
+  - title: "Malzemeler"
+    url: /materials/
   - title: "Standartlar & Tablolar"
     url: /standards/
+  - title: "Analiz"
+    url: /analysis/
+  - title: "Bakım"
+    url: /analysis/
+  
+  
 
   - title: "Referans"
     url: /reference/
