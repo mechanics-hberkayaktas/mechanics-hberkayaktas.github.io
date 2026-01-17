@@ -49,17 +49,17 @@ layout: default
   {%- when "lunr" -%}
   <form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
     <label class="sr-only" for="search">
-      {{ site.data.ui-text[site.locale].search_label_text | default: 'Enter your search term...' }}
+      {{ site.data.ui-text[site.locale].search_label_text | default: 'Ne aramıştınız...' }}
     </label>
-    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Ne aramıştınız...' }}" />
   </form>
   <div id="results" class="results"></div>
   {%- when "google" -%}
   <form onsubmit="return googleCustomSearchExecute();" id="cse-search-box-form-id" role="search">
     <label class="sr-only" for="cse-search-input-box-id">
-      {{ site.data.ui-text[site.locale].search_label_text | default: 'Enter your search term...' }}
+      {{ site.data.ui-text[site.locale].search_label_text | default: 'Ne aramıştınız...' }}
     </label>
-    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+    <input type="search" id="cse-search-input-box-id" class="search-input" tabindex="-1" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Ne aramıştınız...' }}" />
   </form>
   <div id="results" class="results">
     <gcse:searchresults-only></gcse:searchresults-only>
@@ -101,7 +101,7 @@ layout: default
         {% include archive-single.html type=entries_layout %}
       {% endfor %}
     </div>
-    <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+    <a href="#page-title" class="masthead__menu-item">{{ site.data.ui-text[site.locale].back_to_top | default: 'masthead__menu-item' }} &uarr;</a>
   </section>
 {% endfor %}
 
