@@ -9,7 +9,7 @@ excerpt: >
   Tasarım, analiz, imalat, saha uygulamaları ve uluslararası standartları kapsayan profesyonel bir makine mühendisliği bilgi tabanı.<br />
   
 feature_row:
-  - image_path: /assets/images/mm-customizable-feature.png
+  - image_path: /assets/images/en-iyi-cad-programlari.png
     alt: "customizable"
     title: "Super customizable"
     excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
