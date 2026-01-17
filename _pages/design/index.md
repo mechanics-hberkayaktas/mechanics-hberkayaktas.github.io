@@ -1,12 +1,12 @@
 ---
-title: "Tasarım"
+title: "AutoCAD – Teknik Çizim Altyapısı"
 layout: single
-permalink: /design
+permalink: /design/
 sidebar:
   nav: "main"
 ---
 
-## Tasarım nedir Nedir?
+## Tasarım Nedir?
 
 AutoCAD, 2B teknik resim ve temel 3B modelleme için kullanılan,
 endüstri standardı bir CAD yazılımıdır.
