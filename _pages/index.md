@@ -16,19 +16,19 @@ feature_row:
     url: "/desing/"
     btn_class: "btn--primary"
     btn_label: "Daha Fazla"
-  - image_path: /assets/images/fea-analysis.png
+  - image_path: /assets/images/kanal-frezeleme-islemi-nedir-0aed.jpg
     alt: "fully responsive"
     title: "Üretim"
     excerpt: "Üretim süreçleri: talaşlı imalat, kaynak, montaj, kalite kontrol ve atölye uygulamaları; üretim yöntemleri, makine seçimleri ve iyi uygulamalar hakkında rehber için Üretim sayfasına gidin."
-    url: "/docs/layouts/"
+    url: "/manufacturing/"
     btn_class: "btn--primary"
     btn_label: "Daha Fazla"
 
-  - image_path: /assets/images/kanal-frezeleme-islemi-nedir-0aed.jpg
+  - image_path: /assets/images/fea-analysis.png
     alt: "100% free"
     title: "Analiz"
     excerpt: "Mekanik analizler: statik, dinamik, modal ve gerilme analizleri; FEA iş akışları, sınır koşulları tanımlama ve sonuç yorumlama rehberi. Detaylar için Analiz sayfasına gidin."
-    url: "/docs/license/"
+    url: "/analysis/"
     btn_class: "btn--primary"
     btn_label: "Daha Fazla"
       
